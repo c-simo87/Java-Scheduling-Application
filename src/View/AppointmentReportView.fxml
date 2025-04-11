@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.AppointmentReportController">
+   <children>
+      <Label layoutX="276.0" layoutY="20.0" text="Appointment Report">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="typeView" layoutX="237.0" layoutY="118.0" prefHeight="200.0" prefWidth="297.0">
+        <columns>
+          <TableColumn fx:id="typeColumn" prefWidth="148.0" text="Type" />
+          <TableColumn fx:id="typeTotalColumn" prefWidth="148.0" text="Total" />
+        </columns>
+      </TableView>
+      <Label layoutX="353.0" layoutY="85.0" text="Type Report" />
+      <TableView fx:id="monthView" layoutX="237.0" layoutY="366.0" prefHeight="200.0" prefWidth="297.0">
+        <columns>
+          <TableColumn fx:id="monthColumn" prefWidth="146.0" text="Month" />
+          <TableColumn fx:id="monthTotalColumn" prefWidth="150.0" text="Total" />
+        </columns>
+      </TableView>
+      <Label layoutX="348.0" layoutY="340.0" text="Month Report" />
+   </children>
+</AnchorPane>
